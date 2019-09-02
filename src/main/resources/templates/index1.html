@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+    <script src="https://kit.fontawesome.com/a507666c04.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="display-4 text-center">
+            <i class="fas fa-book-open text-primary"></i>
+            Student<span class="text-primary">Management</span>
+        </h2>
+        <table class="table table-striped mt-5">
+            <thead id="student-head">
+            <th id="id" style="visibility: hidden">Id</th>
+            <th id="rollNumber">Roll Number</th>
+            <th id="name">Name</th>
+            <th id="grade">Grade</th>
+            <th id="section">Section</th>
+            <th id="motherName">Mother Name</th>
+            <th id="fatherName">Father Name</th>
+            <th id="contactNumber">Contact Number</th>
+            <th id="mailId">Mail ID</th>
+            <th id="address">Address</th>
+            <th>View/Edit</th>
+            <th>Delete</th>
+            </thead>
+            <tbody id="student-list">
+            </tbody>
+        </table>
+        <button class="btn btn-primary" id="addStudent" onclick="addStudent(this)">Add Student</button>
+    </div>
+    <script src="/js/app1.js"></script>
+</body>
+</html>
