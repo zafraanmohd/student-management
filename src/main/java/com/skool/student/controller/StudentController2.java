@@ -14,14 +14,7 @@ public class StudentController2 {
     @Autowired
     StudentRepository studentRepository;
 
-    @RequestMapping()
-    public String index(Model model)
-    {
-        model.addAttribute("students",studentRepository.findAll());
-        return "index";
-    }
-
-    @RequestMapping("/1")
+    @RequestMapping("")
     public String index1(Model model)
     {
         return "index1";

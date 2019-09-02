@@ -6,7 +6,7 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component //Removed when using mysql as database and not h2
 public class StudentBootStrap implements ApplicationListener<ContextRefreshedEvent> {
     private StudentRepository studentRepository;
 
